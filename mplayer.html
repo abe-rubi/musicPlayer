@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="appframe">
+      <h1>Music Player</h1>
+      <img src="stop.png" alt="stop">
+      <!-- controls属性:一時停止や音量調整などのコントロールバーを設置 -->
+      <audio src="01 タクシードライバー.mp3" controls>曲01</audio>
+      <p>Please select Music！<a id="random" href="#">ランダム</a></p>
+      <ul>
+        <!-- data-〇〇〇　で独自の属性を追加できる -->
+        <li data-file="01 タクシードライバー.mp3" class="active">曲01</li>
+        <li data-file="02 多数決.mp3">曲02</li>
+        <li data-file="03 季節は次々死んでいく.mp3">曲03</li>
+        <li data-file="04 分岐.mp3">曲04</li>
+        <li data-file="05 百年経ったら.mp3">曲05</li>
+        <li data-file="06 ライフイズビューティフル.mp3">曲06</li>
+      </ul>
+      <p>Please be careful sound volume！</p>
+    </div>
+    <script src="js/main.js" charset="utf-8"></script>
+  </body>
+</html>
